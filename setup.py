@@ -1,19 +1,21 @@
 from setuptools import setup
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
-    name='ahrefs-api-python',
-    packages=['ahrefs-api-python'],
-    version='0.0.1',
-    description='This is the python library for using ahrefs.com API',
-    author='sp.remotely',
-    author_email='dev.sergey.popov@gmail.com',
-    url='https://github.com/spremotely/ahrefs-api-python',
+    name='python_ahrefs_api',
+    packages=['python_ahrefs_api'],
+    version='0.0.2',
+    description='Python library for using the ahrefs.com API',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    author='buzzlaker',
+    author_email='john@techsystems.io',
+    url='https://github.com/buzzlaker/python_ahrefs_api',
     classifiers=[
-        'Development Status :: 1 - Planning',
         'Environment :: Console',
         'Intended Audience :: End Users/Desktop',
         'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python :: 2.7'
     ]
 )
